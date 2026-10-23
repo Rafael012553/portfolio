@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de estudante de desenvolvimento web, com projetos e habilidades.">
+    <title>Seu Nome | Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="cabecalho" id="topo">
+        <nav class="navegacao container" aria-label="Navegação principal">
+            <a class="logo" href="#inicio" aria-label="Ir para o início">SN<span>.</span></a>
+
+            <button class="botao-menu" id="botaoMenu" type="button"
+                    aria-label="Abrir menu" aria-expanded="false"
+                    aria-controls="listaMenu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="lista-menu" id="listaMenu">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <button class="botao-tema" id="botaoTema" type="button"
+                    aria-label="Ativar modo escuro" title="Alternar tema">
+                <span aria-hidden="true">☾</span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <section class="inicio container" id="inicio" aria-labelledby="tituloInicio">
+            <div class="inicio-texto">
+                <p class="sobretitulo" id="saudacao">Olá!</p>
+                <h1 id="tituloInicio">Eu sou <span>Seu Nome</span></h1>
+                <h2>Estudante de desenvolvimento web</h2>
+                <p class="resumo">
+                    Estou aprendendo a transformar ideias em páginas e sistemas simples,
+                    acessíveis e úteis. Quero continuar praticando e crescer na área de tecnologia.
+                </p>
+                <a class="botao principal" href="#projetos">Conheça meus projetos</a>
+            </div>
+
+            <div class="avatar" role="img" aria-label="Avatar ilustrado de uma pessoa desenvolvedora">
+                <span aria-hidden="true">&lt;/&gt;</span>
+            </div>
+        </section>
+
+        <section class="secao container" id="sobre" aria-labelledby="tituloSobre">
+            <p class="sobretitulo">Um pouco sobre mim</p>
+            <h2 class="titulo-secao" id="tituloSobre">Sobre mim</h2>
+            <div class="texto-sobre">
+                <p>
+                    Sou estudante e comecei a me interessar por tecnologia ao desenvolver
+                    atividades e projetos durante o curso. Gosto de aprender na prática,
+                    testar ideias e entender como cada parte de um site funciona.
+                </p>
+                <p>
+                    Atualmente estou praticando HTML, CSS, JavaScript e Python. Meu objetivo
+                    é melhorar minha lógica de programação, aprender boas práticas e conquistar
+                    uma oportunidade de estágio para ganhar experiência com projetos reais.
+                </p>
+            </div>
+        </section>
+
+        <section class="secao secao-alternada" id="habilidades" aria-labelledby="tituloHabilidades">
+            <div class="container">
+                <p class="sobretitulo">O que estou aprendendo</p>
+                <h2 class="titulo-secao" id="tituloHabilidades">Minhas habilidades</h2>
+                <div class="grade-habilidades">
+                    <article class="habilidade">
+                        <h3>HTML</h3>
+                        <p>Estrutura semântica de páginas.</p>
+                        <span class="nivel">Praticando</span>
+                    </article>
+                    <article class="habilidade">
+                        <h3>CSS</h3>
+                        <p>Estilização, Flexbox, Grid e responsividade.</p>
+                        <span class="nivel">Praticando</span>
+                    </article>
+                    <article class="habilidade">
+                        <h3>JavaScript</h3>
+                        <p>Interatividade e validação de formulários.</p>
+                        <span class="nivel">Iniciante</span>
+                    </article>
+                    <article class="habilidade">
+                        <h3>Python e Flask</h3>
+                        <p>Rotas e lógica para aplicações web.</p>
+                        <span class="nivel">Praticando</span>
+                    </article>
+                    <article class="habilidade">
+                        <h3>SQLite</h3>
+                        <p>Criação e consulta de bancos de dados.</p>
+                        <span class="nivel">Iniciante</span>
+                    </article>
+                    <article class="habilidade">
+                        <h3>Git e GitHub</h3>
+                        <p>Organização e compartilhamento de projetos.</p>
+                        <span class="nivel">Quero aprender mais</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao container" id="projetos" aria-labelledby="tituloProjetos">
+            <p class="sobretitulo">O que já desenvolvi</p>
+            <h2 class="titulo-secao" id="tituloProjetos">Meus projetos</h2>
+            <p class="introducao-projetos">
+                Estes são exemplos de projetos feitos em atividades do curso. Atualize as descrições
+                e os links para refletirem exatamente o que você desenvolveu.
+            </p>
+
+            <div class="filtros" aria-label="Filtrar projetos por tecnologia">
+                <button class="filtro ativo" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+                <button class="filtro" type="button" data-filtro="html" aria-pressed="false">HTML/CSS</button>
+                <button class="filtro" type="button" data-filtro="python" aria-pressed="false">Python/Flask</button>
+                <button class="filtro" type="button" data-filtro="sqlite" aria-pressed="false">SQLite</button>
+            </div>
+
+            <div class="grade-projetos" id="gradeProjetos">
+                <article class="projeto" data-tecnologias="python sqlite">
+                    <div class="projeto-visual biblioteca" role="img" aria-label="Ilustração de livros empilhados">
+                        <span aria-hidden="true">▤</span>
+                    </div>
+                    <div class="projeto-conteudo">
+                        <p class="etiqueta">Projeto de curso</p>
+                        <h3>Sistema de Biblioteca</h3>
+                        <p>Aplicação para organizar o acervo, cadastrar livros e consultar informações armazenadas.</p>
+                        <ul class="tags" aria-label="Tecnologias utilizadas">
+                            <li>Python</li><li>Flask</li><li>SQLite</li>
+                        </ul>
+                        <span class="link-projeto">Link em breve</span>
+                    </div>
+                </article>
+
+                <article class="projeto" data-tecnologias="python">
+                    <div class="projeto-visual doacoes" role="img" aria-label="Ilustração de uma caixa de doações">
+                        <span aria-hidden="true">♡</span>
+                    </div>
+                    <div class="projeto-conteudo">
+                        <p class="etiqueta">Projeto escolar</p>
+                        <h3>S.A.D. — Sistema de Apoio a Doações</h3>
+                        <p>Ideia de sistema para registrar doações e acompanhar os alimentos arrecadados.</p>
+                        <ul class="tags" aria-label="Tecnologias utilizadas">
+                            <li>Python</li><li>Lógica</li>
+                        </ul>
+                        <span class="link-projeto">Link em breve</span>
+                    </div>
+                </article>
+
+                <article class="projeto" data-tecnologias="python sqlite">
+                    <div class="projeto-visual escola" role="img" aria-label="Ilustração de um prédio escolar">
+                        <span aria-hidden="true">⌂</span>
+                    </div>
+                    <div class="projeto-conteudo">
+                        <p class="etiqueta">Projeto de curso</p>
+                        <h3>Sistema de Gestão Escolar</h3>
+                        <p>Projeto para organizar dados escolares e praticar rotas, consultas e relacionamentos.</p>
+                        <ul class="tags" aria-label="Tecnologias utilizadas">
+                            <li>Flask</li><li>SQLite</li>
+                        </ul>
+                        <span class="link-projeto">Link em breve</span>
+                    </div>
+                </article>
+            </div>
+            <p class="mensagem-filtro" id="mensagemFiltro" aria-live="polite"></p>
+        </section>
+
+        <section class="secao secao-alternada" id="contato" aria-labelledby="tituloContato">
+            <div class="container contato-layout">
+                <div>
+                    <p class="sobretitulo">Vamos conversar</p>
+                    <h2 class="titulo-secao" id="tituloContato">Entre em contato</h2>
+                    <p>Use o formulário para deixar uma mensagem. Não coloque dados pessoais sensíveis.</p>
+                    <div class="redes">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+
+                <form class="formulario" id="formularioContato" novalidate>
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" required>
+                        <small class="erro" id="erroNome"></small>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                        <small class="erro" id="erroEmail"></small>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        <small class="erro" id="erroMensagem"></small>
+                    </div>
+
+                    <div class="campo consentimento">
+                        <label for="consentimento">
+                            <input type="checkbox" id="consentimento" name="consentimento" required>
+                            Concordo que os dados sejam usados somente para responder a esta mensagem.
+                        </label>
+                        <small class="erro" id="erroConsentimento"></small>
+                    </div>
+
+                    <p class="aviso-privacidade">
+                        Este formulário é apenas demonstrativo: os dados não são enviados nem armazenados.
+                    </p>
+                    <button class="botao principal" type="submit">Validar mensagem</button>
+                    <p class="resultado-formulario" id="resultadoFormulario" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <p>© <span id="anoAtual"></span> Seu Nome. Feito como parte dos meus estudos.</p>
+            <a href="#topo">Voltar ao topo ↑</a>
+        </div>
+    </footer>
+</body>
+</html>
